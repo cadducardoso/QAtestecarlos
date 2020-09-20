@@ -1,0 +1,12 @@
+Cliente Y solicita que ao depender da temperatura o stwitch deverá ligar ou desligar o aquecedor.
+A intenção na situação do cliente é um controle automático da temperatura. 
+
+Scenario 1: Controlador de termostato deverá controlar switch para ligar aquecedor
+Given: Controlar Switch para ligar ou desligar aquecedor
+When: Temperatura no ambiente estiver medindo maior ou igual que 23°C
+Then: Switch controlado deverá "desligar" o aquecedor
+
+Scenario 2: Controlador de termostato deverá controlar switch para desligar aquecedor
+Given: Controlar Switch para ligar ou desligar aquecedor
+When: Temperatura no ambiente estiver medindo menos de 5°C
+Then: Switch controlado deverá "ligar" o aquecedor
