@@ -1,0 +1,22 @@
+Cliente X solicita que ao informar uma determinada idade seja visualizado um período de vida.
+Como um cliente, o mesmo tem necessidade de saber através da idade qual seria o seu período de vida.
+
+Scenario 1: Converter a idade para Período Inválido
+Given: Conversor de Idade em Periodo de Vida 
+When: Cliente informa idade 0 
+Then: Irá ser visto  "Inválido"
+
+Scenario 2: Converter a idade para o Período Criança
+Given: Conversor de Idade em Periodo de Vida 
+When: Cliente informa uma idade maior que 0 e menor que 16.
+Then: Irá ser visto "Criança"
+
+Scenario 3: Converter a idade para o Período Adulto
+Given: Conversor de Idade em Periodo de Vida 
+When: Cliente informa uma idade maior ou igual 16 e menor que 60.
+Then: Irá ser visto "Adulto"
+
+Scenario 4: Converter a idade para o Período Idoso
+Given: Conversor de Idade em Periodo de Vida
+When: Cliente informa idade maior que 59
+Then: Irá ser visto "Idoso"
